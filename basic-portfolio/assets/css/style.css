@@ -134,7 +134,7 @@ content of 960px container*/
 }
 
 /*These are your Contact-specific CSS*/
-.input[type=txext], select {
+.input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -144,8 +144,37 @@ content of 960px container*/
     box-sizing: border-box;
 
 }
+form {
+    padding-left: 40px;
+}
+
+label {
+    padding-top: 40px;
+}
+
+input {
+    width: 93%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.space {
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 100px;
+    width: 94.7%;
+}
 
 
+.submit {
+        display: block;
+        background-color: #4aaaa5;
+        padding: 10px 30px;
+        color: #ffffff;
+        font-size: 14px;
+}
 /*obsolete, erroneous, or redundant codes*/
 
 .size960 {
