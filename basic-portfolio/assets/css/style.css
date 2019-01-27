@@ -71,8 +71,6 @@ h1 {
 .h2 {
     color: #4aaaa5;
     background-color: #ffffff;
-    border-color: #cccccc;
-    border-bottom-style: solid;
     padding-bottom: 20px;
     padding-left: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -119,7 +117,11 @@ content of 960px container*/
     Helvetica, sans-serif;
 
 }
-
+/*Attempting to isolate border issues*/
+.container h2 {
+    border-color: #cccccc;
+    border-bottom-style: solid;
+}
 
 .footcenter {
     text-align: center;
@@ -132,6 +134,14 @@ content of 960px container*/
 }
 
 /*These are your Contact-specific CSS*/
+/*W3 schools input fields*/
+
+input {
+    width: 93%;
+    padding: 7px;
+    font-size: 14px;
+}
+
 .input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -150,11 +160,6 @@ label {
     padding-top: 40px;
 }
 
-input {
-    width: 93%;
-    padding: 7px;
-    font-size: 14px;
-}
 
 .space {
     margin-bottom: 5px;
@@ -163,6 +168,7 @@ input {
 textarea {
     height: 100px;
     width: 94.7%;
+
 }
 
 
@@ -186,6 +192,7 @@ textarea {
     margin: 20px;
 }
 
+
 /*This is the class for your portfolio pictures.*/
 .portpics { 
     padding: auto; 
@@ -201,6 +208,16 @@ textarea {
     text-align: center;
     padding: 5px 10px;
     width: 90%;
+    opacity: .8;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+}
+
+.porttext:hover {
+    font-size: 110%;
+    opacity: 1;
 }
 
 /*obsolete, erroneous, or redundant codes*/
