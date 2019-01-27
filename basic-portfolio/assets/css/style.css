@@ -176,7 +176,7 @@ textarea {
 
 /*These are the CSS for the portfolio page*/
 
-/*This is the class for the picture container/link. Add borders and link functionality.*/
+/*This is the class for the picture container/link. Add link functionality.*/
 .portbox {
     position: relative;
     float: left;
@@ -200,6 +200,7 @@ textarea {
     bottom: 10%;
     text-align: center;
     padding: 5px 10px;
+    width: 90%;
 }
 
 /*obsolete, erroneous, or redundant codes*/
