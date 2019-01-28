@@ -17,15 +17,18 @@ body {
     height: 75px;   
 }
 
-
+/*Applying RESET- font-size, text-align left, padding-left, top, bottom, dropped width from 350*/
 .name {
     background-color: #4aaaa5;
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 350px;
-    padding: 20px 0;
+    width: 250px;
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-bottom: 23px; 
     float: left;
-    text-align: center;
+    text-align: left;
+    font-size: 175%;
 }
 
 .nav {
@@ -66,16 +69,18 @@ h1 {
     color: #4aaaa5;
     background-color: #ffffff;
     padding-bottom: 20px;
-    padding-left: 25px;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 910px;
     margin: auto;
+    border-bottom: solid 2px #cccccc;
+    font-size: 125%;
 }
 
 /*Adding float-left gives correct alignment*/
 .bioimage {
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 25px;
     padding-right: 20px;
     float: left;
 }
@@ -96,7 +101,7 @@ h1 {
     bottom: 0;
     background-color: #666666;
     color: white;
-    border-top-style: solid;
+    border-top: solid 8px;
     border-color: #4aaaa5
 
 }
@@ -151,7 +156,8 @@ input {
 
 }
 form {
-    padding-left: 20px;
+    padding-left: 25px;
+    width: 100%;
 }
 
 label {
