@@ -153,10 +153,6 @@ label {
 }
 
 
-.space {
-    margin-bottom: 5px;
-}
-
 textarea {
     height: 100px;
     width: 94.7%;
@@ -194,6 +190,7 @@ textarea {
 }
 
 /*This is the class for the picture text boxes.*/
+/*Fading code borrowed from bavotasan.com*/
 .porttext {
     position: absolute;
     background-color:  #4aaaa5;
@@ -215,19 +212,23 @@ textarea {
     opacity: 1;
 }
 
-/*obsolete, erroneous, or "fix-it" codes*/
+/*Obsolete, erroneous, or "fix-it" codes below*/
 
+/*Creating pixel width 960 for containers*/
 .size960 {
     width: 960px;
     margin: auto;
     
 }
-
+/*Clearing floats that seem to break everything without this*/
 .allclear {
     clear: both;
 }
 
-
+/*Quick fix for p tags in form container*/
+.space {
+    margin-bottom: 5px;
+}
 /*test code for display:block and display:inline*/
 .block {
     display: block;
