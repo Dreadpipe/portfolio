@@ -22,13 +22,14 @@ body {
     background-color: #4aaaa5;
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 250px;
+    width: 290px;
     padding-top: 24px;
     padding-left: 20px;
     padding-bottom: 23px; 
     float: left;
     text-align: left;
     font-size: 175%;
+    font-weight: bold;
 }
 
 .nav {
@@ -69,12 +70,12 @@ h1 {
     color: #4aaaa5;
     background-color: #ffffff;
     padding-bottom: 20px;
-
     font-family: Georgia, 'Times New Roman', Times, serif;
     width: 910px;
     margin: auto;
     border-bottom: solid 2px #cccccc;
     font-size: 125%;
+    font-weight: bold;
 }
 
 /*Adding float-left gives correct alignment*/
