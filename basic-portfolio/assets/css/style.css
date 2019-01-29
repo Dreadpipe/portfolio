@@ -3,6 +3,7 @@
     margin:0;
 }
 
+/*This is a no-no, fix this*/
 body {
     background-image: url("../images/prism.png");
     overflow: auto;
@@ -249,3 +250,6 @@ textarea {
 .inline {
     display: inline;
 }
+/*Attempting to add Konami code to page.
+https://www.instructables.com/id/How-to-Add-Konami-Code-to-Your-Website/*/
+
