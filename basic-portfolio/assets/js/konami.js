@@ -2,7 +2,7 @@
 /*KONAMI CODE borrowed FROM https://stackoverflow.com/questions/31626852/how-to-add-konami-code-in-a-website-based-on-html*/
 function onKonamiCode(cb) {
     var input = '';
-    var key = '38384040373937396665';
+    var key = '3838404037393739666513';
     document.addEventListener('keydown', function (e) {
       input += ("" + e.keyCode);
       if (input === key) {
