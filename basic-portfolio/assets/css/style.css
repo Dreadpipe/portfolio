@@ -94,7 +94,6 @@ h1 {
 
 }
 
-
 .footer {
     position: fixed;
     width: 100%;
@@ -129,12 +128,6 @@ content of 960px container*/
     Helvetica, sans-serif;
 
 }
-/*Attempting to isolate border issues, border exists until given attributes*/
-.container h2 {
-    border-color: #cccccc;
-    border-bottom-style: solid;
-}
-
 
 /*These are your Contact-specific CSS*/
 /*coding borrowed from W3 schools input fields*/
@@ -240,6 +233,12 @@ textarea {
 /*Quick fix for p tags in form container*/
 .space {
     margin-bottom: 5px;
+}
+
+/*Attempting to isolate border issues, border exists until given attributes*/
+.container h2 {
+    border-color: #cccccc;
+    border-bottom-style: solid;
 }
 /*test code for display:block and display:inline*/
 .block {
