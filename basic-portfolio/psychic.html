@@ -9,7 +9,7 @@
         <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css">-->
         <title>Psychic</title>
     </head>
-    <body>
+    <body class="p-3 mb-2 bg-secondary text-white"></body>
       <div class="container">
         <div class="row">
             <div class="col-1">
@@ -17,7 +17,7 @@
                 <div class="col-10">
                   <div class="jumbotron text-center align-self-center p-3 mb-2 bg-dark text-white">
                       <h1 class="display-6">BRAIN MAN'S PSYCHIC CHALLENGE</h1>
-                      <p class="lea">The battle of wits has begun.  I, Brain Man, am thinking of a letter.  Can you guess it?  Win my game, and gain my wisdom.</p>
+                      <p class="lea"><i class="font-italic">"The battle of wits has begun.  I, Brain Man, am thinking of a letter.  Can you guess it?  Win my game, and gain my wisdom."</i></p>
                       <hr class="my-4">
                       <p>You must defeat Brain Man.  Press the button to play his wicked game.</p>
                       <a class="btn btn-primary btn-lg" href="#" role="button">Challenge Accepted!</a>        
@@ -44,7 +44,8 @@
                   <img src="assets/images/vs.png" class="card-img-top h-25 w-25 align-self-center" alt="...">
                   <div class="card-body">
                     <h5 class="card-title text-center">Favor</h5>
-                    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!--I need to call an id here- the text within this card mmust reflect wins/losses-->
+                    <p class="card-text text-center" id="losses-text"></p>
                   </div>
                 </div>
           </div>
@@ -86,9 +87,9 @@
 <!--
 ** How you gon' do it
 
-1) Jumbo-tron, with big banner.  Can transfer build to Hangman later.
-2) 
-
+1) Button must initiate game
+2) center card must display wins/losses
+3) hero/brain must display score
 
 
 
