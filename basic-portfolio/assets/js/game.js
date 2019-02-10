@@ -13,7 +13,7 @@
             var computerChoiceText = document.getElementById("computerchoice-text");
             var winsText = document.getElementById("wins-text");
             var lossesText = document.getElementById("losses-text");
-            var guessText = document.getElementById("guesses-text");
+            var guessRemain = document.getElementById("guesses-text");
         
             // This function is run whenever the user presses a key.
             document.onkeyup = function(event) {
@@ -32,11 +32,11 @@
             directionsText.text = "Sorry!  Try again!";
             guessRemain--;
 
-            userChoiceText.textContent = "You chose: " + userGuess;
-            computerChoiceText.textContent = "The computer chose: " + computerGuess;
+            userChoiceText.textContent = "You, the Hero: " + userGuess;
+            computerChoiceText.textContent = "Brain Man: " + computerGuess;
             winsText.textContent = "wins: " + wins;
             lossesText.textContent = "losses: " + losses;
-            
+            guessRemain.textContent = "Luck: " + guessRemain;
             }
             else 
             {
