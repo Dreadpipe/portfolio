@@ -32,8 +32,8 @@
             directionsText.text = "Sorry!  Try again!";
             guessRemain--;
 
-            userChoiceText.textContent = "You, the Hero: " + userGuess;
-            computerChoiceText.textContent = "Brain Man: " + computerGuess;
+            userChoiceText.textContent = "You: " + userGuess;
+            computerChoiceText.textContent = "Computer: " + computerGuess;
             winsText.textContent = "wins: " + wins;
             lossesText.textContent = "losses: " + losses;
             guessRemain.textContent = "Luck: " + guessRemain;
