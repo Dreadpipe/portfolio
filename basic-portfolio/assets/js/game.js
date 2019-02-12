@@ -15,7 +15,7 @@
             var computerChoiceText = document.getElementById("computerchoice-text");
             var winsText = document.getElementById("wins-text");
             var lossesText = document.getElementById("losses-text");
-            var guessRemain = document.getElementById("guesses-text");
+            var guesstext = document.getElementById("guesses-text");
         
             // This function is run whenever the user presses a key.
             document.onkeyup = function(event) {
@@ -33,8 +33,7 @@
 
             } else if (userGuess !== computerGuess) {
               directionsText.textContent = "Sorry!  Try again!";
-              // "Losses" currently equate to "guesses"
-              losses++;
+              guessRemain--;
 
             // } else if (guessRemain = 0) {
             //   losses++;
@@ -44,13 +43,33 @@
             // Find way to resolve or reset game after 7 wins, or any wins for that matter
             } else if (userGuess === computerGuess) {
               directionsText.textContent = "Correct!";
+              alert("You did it! Buy a lottery ticket.")
               wins++;
+              guessRemain = 10;
+              guesstext.textContent = "Guesses: " + guessRemain;
             
             }
             // These lines of text will go to the document via ID
             userChoiceText.textContent = "Tiny Knight chooses: " + userGuess;
             computerChoiceText.textContent = "Brain Man chooses: " + computerGuess;
             winsText.textContent = "Wins: " + wins;
-            lossesText.textContent = "Guesses: " + losses;
+            // lossesText.textContent = "Guesses: " + losses;
+            guesstext.textContent = "Guesses: " + guessRemain;
+
+            // 
+            if (guessRemain === 0) {
+              alert("You suck!");
+              guessRemain = 10;
+              losses++;
+              lossesText.textContent = "Losses: " + losses;
+              guesstext.textContent = "Guesses: " + guessRemain;
+            }
             
             };
+
+            /* Additons and tweaks-
+             * Eventually make single letter into hang-man
+                -Use smaller words, create win scenario
+             * Create dynamism with button, change directions text to jumbotron
+             *
+             */
