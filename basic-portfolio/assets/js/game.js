@@ -43,7 +43,7 @@
             // Find way to resolve or reset game after 7 wins, or any wins for that matter
             } else if (userGuess === computerGuess) {
               directionsText.textContent = "Correct!";
-              alert("You did it! Buy a lottery ticket.")
+              alert("You did it! I promised you my wisdom.  I may have lied.")
               wins++;
               guessRemain = 10;
               guesstext.textContent = "Guesses: " + guessRemain;
@@ -58,7 +58,7 @@
 
             // 
             if (guessRemain === 0) {
-              alert("You suck!");
+              alert("I have won again!  BRAIN MAN CANNOT BE DEFEATED");
               guessRemain = 10;
               losses++;
               lossesText.textContent = "Losses: " + losses;
