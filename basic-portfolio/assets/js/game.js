@@ -5,8 +5,6 @@
             // Variables that store wins and losses, and remaining guesses
             var wins = 0;
             var losses = 0;
-            // remaning guesses currently not working
-            // for now, game posts wins/losses only; and "guesses" are text-holder for losses
             var guessRemain = 10;
 
             // HTML relevant variables
@@ -27,17 +25,12 @@
               var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
             // This tells the user they must select letters between "a" and "z"
-            // Find way to negate display if they do so
             if (userGuess < "a" || userGuess > "z") {
               directionsText.textContent = "You cannot deceive me!  You must pick a letter!";
 
             } else if (userGuess !== computerGuess) {
               directionsText.textContent = "Sorry!  Try again!";
               guessRemain--;
-
-            // } else if (guessRemain = 0) {
-            //   losses++;
-            //   directionsText.textContent = "Haha!  I win again!"
             
             // If user matches computer, gain a win
             // Find way to resolve or reset game after 7 wins, or any wins for that matter
@@ -53,10 +46,8 @@
             userChoiceText.textContent = "Tiny Knight chooses: " + userGuess;
             computerChoiceText.textContent = "Brain Man chooses: " + computerGuess;
             winsText.textContent = "Wins: " + wins;
-            // lossesText.textContent = "Guesses: " + losses;
             guesstext.textContent = "Guesses: " + guessRemain;
 
-            // 
             if (guessRemain === 0) {
               alert("I have won again!  BRAIN MAN CANNOT BE DEFEATED");
               guessRemain = 10;
@@ -69,7 +60,7 @@
 
             /* Additons and tweaks-
              * Eventually make single letter into hang-man
-                -Use smaller words, create win scenario
+              -Use smaller words, create win scenario
              * Create dynamism with button, change directions text to jumbotron
              *
              */
